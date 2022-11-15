@@ -1,7 +1,9 @@
 $(document).ready(function() {
 
+	const formForm = $('[data-form="form"')
+
 	//E-mail Ajax Send
-	$("form").submit(function() { //Change
+	formForm.submit(function() { //Change
 		var th = $(this);
 		$.ajax({
 			type: "POST",
