@@ -1,0 +1,55 @@
+// main: ../style.less
+
+.contact {
+    display: flex;
+}
+
+.contact__left {
+    width: 47%;
+    padding: 2rem;
+
+    @media @mobile {
+        padding: 1rem;
+    }
+}
+
+.contact__right {
+    width: 53%;
+
+    background: @black url(https://via.placeholder.com/480x700) center no-repeat;
+}
+
+.contact__info {
+    margin: 2rem 0 3rem;
+    padding: 0;
+    list-style: none;
+
+    font-size: .94rem;
+    color: @black;
+    font-weight: 300;
+
+    @media @mobile {
+        font-size: .60rem;
+        margin: 0.5rem 0.5rem 0.5rem;
+    }
+}
+
+.contact__info-item {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: .75rem;
+
+    &:last-child {
+        margin-bottom: 0;
+        align-items: center;
+    }
+}
+
+.contact__info-icon {
+    margin-right: 0.75rem;
+
+    @media @mobile {
+        margin-right: 0;
+    }
+}
